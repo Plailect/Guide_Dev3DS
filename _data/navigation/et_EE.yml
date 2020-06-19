@@ -4,7 +4,7 @@ main:
     title: Home
     url: /
   - 
-    title: שאלות ותשובות
+    title: FAQ
     url: faq
   - 
     title: Donations
@@ -16,7 +16,7 @@ main:
     title: Updating B9S
     url: updating-b9s
   - 
-    title: A9LH אל B9S
+    title: A9LH to B9S
     url: a9lh-to-b9s
   - 
     title: Troubleshooting
@@ -25,10 +25,10 @@ main:
     title: GodMode9 Usage
     url: godmode9-usage
   - 
-    title: ניווט האתר
+    title: Site Navigation
     url: site-navigation
   - 
-    title: הסרת CFW
+    title: Uninstall CFW
     url: uninstall-cfw
 top:
   - 
@@ -40,9 +40,9 @@ bottom:
     title: If you appreciate this guide, I accept <a href="donations">Donations</a>.
 footer:
   - 
-    title: מקור
+    title: Source
   - 
-    title: ניווט האתר
+    title: Site Navigation
   - 
     title: Privacy Policy
 sidebar_title:

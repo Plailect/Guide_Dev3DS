@@ -1,0 +1,47 @@
+---
+title: "Get Started"
+---
+
+{% include toc title="Table of Contents" %}
+
+### Required Reading
+
+Before starting, you may want to check your SD card for errors using [H2testw (Windows)](h2testw-(windows)), [F3 (Linux)](f3-(linux)), or [F3X (Mac)](f3x-(mac))!
+{: .notice--warning}
+
+{% capture notice-1 %}
+There have been reports of a wave of bans being handed out to CFW users by Nintendo. To protect yourself, please do the following steps before starting this guide:
+
+1. Go to System Settings, then "Internet Settings", then "SpotPass", then "Sending of System Information"
+1. Disable the "Sending of System Information" option
+1. Exit the System Settings
+1. Go to your Friend List (the [orange Face Icon]({{ "/images/friend-list-icon.png" | absolute_url }}) in the top row of your Home Menu)
+  + If you receive an error and are kicked out of the menu, the Friend List setting is either already disabled or your console cannot connect to Nintendo's servers (due to a ban or connection issues)
+1. Go to the Friend List settings, then "Friend Notification Settings", then "Show friends what you're playing"
+1. Disable the "Show friends what you're playing" option
+1. Exit your Friend List
+
+{% endcapture %}
+
+<div class="notice--danger">{{ notice-1 | markdownify }}</div>
+
+___
+### Methods
+
+___
+
+#### 0.23.5 Install
+
+This method involves downgrading to an older firmware version to utilize a browser-based exploit. It is *not* compatible with JAN (New 2DS XL) units because they cannot downgrade below 0.25.5.
+
+### Continue to [0.23.5 Install](0.23.5-install)
+{: .notice--primary}
+
+___
+
+#### ntrboot
+
+This method flashes a commercial flashcart with the ntrboot exploit then boots it on your PANDA. It is compatible with all models and versions (including JAN).
+
+### Continue to [ntrboot](ntrboot)
+{: .notice--primary}

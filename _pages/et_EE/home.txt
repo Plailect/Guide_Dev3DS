@@ -1,0 +1,112 @@
+---
+layout: splash
+title: "Panda 3DS Hacks Guide" #
+header:
+  overlay_color: "#5e616c" #
+  overlay_image: /images/home-page-feature.jpg
+  overlay_filter: 0.5
+  caption:
+excerpt: "A complete guide to Panda 3DS custom firmware, <br /> from stock to boot9strap.<br />"
+---
+
+For complete guides to homebrew and custom firmware for other devices, check out [Hacks.Guide](https://hacks.guide).
+{: .notice--primary}
+
+___
+
+Thoroughly read all of the introductory pages (including this one!) before proceeding.
+{: .notice--warning}
+
+{% capture notice-home %}
+This guide is for developer ("PANDA") consoles *only*!    
+If you have a retail (consumer purchased; not from the Nintendo Developer Program) console, check out the [retail 3DS Hacks Guide](https://3ds.hacks.guide)
+{% endcapture %}
+
+<div class="notice--danger">{{ notice-home | markdownify }}</div>
+
+{% capture notice-1 %}
+This guide is available in other languages!    
+Click the <i class="fa fa-language" aria-hidden="true"></i> icon at the top right of the page to change the language.    
+Alternatively, click [here](https://crowdin.com/project/3ds-devguide) to help to keep these translations up to date.
+{% endcapture %}
+
+<div class="notice--success">{{ notice-1 | markdownify }}</div>
+
+This guide needs *your* help to seed [these](https://3ds.guide/rss.xml) torrents!
+{: .notice--primary}
+
+## What is Homebrew?
+
+[**Homebrew**](https://en.wikipedia.org/wiki/List_of_homebrew_video_games) usually refers to software that is not authorized by Nintendo. This includes homebrew tools, applications, games, and emulators.
+
+In most cases, running homebrew on your console is 100% free using just the browser.
+
+## What is Custom Firmware?
+
+**Custom Firmware** ("CFW") enables you to use more advanced hacks that userland homebrew can't easily do. For instance, signature patches let you install unsigned titles that appear right on your HOME Menu.
+
+CFW can be easily set up on any dev console version
+
+## What does this guide install?
+
+This guide has the end goal of taking a completely unmodified 3DS from stock
+firmware to boot9strap powered Custom Firmware. On some versions, it utilizes homebrew as a stepping off point, but Custom Firmware is still the goal.
+
+boot9strap is the newest and best method of launching Custom Firmware that gives us nearly full control of the system only milliseconds into boot, which is similar to the effect of BootMii for the Wii. It gives us even earlier control than arm9loaderhax did, and, unlike standard sighax, boot9strap uses an NDMA overwrite exploit in order to gain Boot9 code execution. This means that any console running boot9strap is capable of dumping the console unique OTP (`OTP.bin`), the ARM11 bootrom (`boot11.bin`), and the ARM9 bootrom (`boot9.bin`).
+
+The benefits of boot9strap over other Custom Firmware launch methods are numerous, and as such it is recommended to use this guide over any other that relies on outdated software (such as menuhax + rxTools, arm9loaderhax, or even normal sighax).
+
+For information on how boot9strap works, please see [this paper](https://arxiv.org/abs/1802.00359).
+
+For a list of each of the calculated sighax signatures, see [this gist](https://gist.github.com/SciresM/cdd2266efb80175d37eabbe86f9d8c52).
+
+## What can I do with Custom Firmware?
+
++ Play all game cards and eShop games, regardless of region
++ Customize your HOME Menu with user-created [themes and splash screens](https://themeplaza.eu/)
++ Use "ROM hacks" for games that you own
++ Take gameplay and application screenshots
++ [Backup, edit, and restore](https://gbatemp.net/threads/413143/) saves for many games
++ Play games for older systems with various emulators, using RetroArch or other standalone emulators. (Works best with a New Nintendo 3DS)
++ Install homebrew titles to your system, and have them appear on your HOME Menu
++ Dump your game cards to a format you can install, and play them without needing the card
++ New 3DS only: stream live gameplay to your PC wirelessly with NTR CFW
++ Run many old Nintendo DS flash carts that were blocked long ago or never worked on Nintendo 3DS
++ Safely update to the latest system version without fear of losing access to homebrew
+
+## What do I need to know before starting?
+
++ **Before beginning the guide, you must know the risks of 3DS hacking: EVERY time you modify your system, there is always the potential for an UNRECOVERABLE brick. They're rare, but still a possibility so make sure you follow ALL directions EXACTLY.**
++ This guide will work on New 3DS, Old 3DS, and 2DS in all regions on all firmware versions
++ If everything goes according to plan, you will lose no data and end up with everything that you started with.
++ Keep the device plugged in and charged throughout the entire process to avoid data loss or damage from an unexpected power-off!
++ Your SD card should be [MBR, not GPT](http://www.howtogeek.com/245610/) (the SD card that comes with the device will be MBR by default).
++ If you need to format a brand new SD card, you can use [guiformat](http://www.ridgecrop.demon.co.uk/index.htm?guiformat.htm) and set to an Allocation Unit Size of 32K (32768).
++ The 2DS is essentially identical to the Old 3DS in terms of software, and that any steps which say "Old 3DS" also apply to 2DS.
+
+## What devices is this guide compatible with?
+
+This guide is confirmed to be compatible with the following developer units:
+
++  CTR *(Old 3DS Test Unit)*
++  SPR *(Old 3DS XL Test Unit)*
++  FTR *(2DS Test Unit)*
++  SNAKE *(New 3DS Test Unit)*
++  CLOSER *(New 3DS XL Test Unit)*
++  PARTNER-CTR [Capture] [Debugger] [Capture Debugger] *(Old 3DS [Debugger] [Capture] [Capture with Debugger] Unit)*
++  IS-CTR-DEBUGGER [w/ SPR] *(Old 3DS Debugger [with SPR Handset] Unit)*
++  IS-SPR-DEBUGGER [w/ CAPTURE] *(Old 3DS XL Debugger [with Capture] Unit)*
++  IS-SNAKE-DevKit *(New 3DS DevKit)*
+
+This guide may be compatible with the following developer units, but this is unconfirmed:
+
++  JAN *(New 2DS XL Test Unit)*
++  IS-CTR-BOX [w/ Expansion Kit] *(CTR Flash Card Writer [with Debugger or Emulator expansion] Unit)*
++  IS-SNAKE-TESTER *(New 3DS Tester Kit)*
++  IS-SNAKE-BOX *(CTR Flash Card Writer with SNAKE Debugger and Emulator Unit)*
++  IS-RAY-DEBUGGER *(IS-SNAKE-BOX Prototype)*
+
+___
+
+### Continue to [Get Started](get-started)
+{: .notice--primary}

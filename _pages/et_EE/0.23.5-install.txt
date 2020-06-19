@@ -1,0 +1,50 @@
+---
+title: "0.23.5 Install"
+---
+
+{% include toc title="Table of Contents" %}
+
+### Required Reading
+
+This guide will: 
+
+- Install the version 0.23.5 for your region / device
+- Install boot9strap using CakeHax Browser
+- (Optionally) install the latest version for your region / device
+
+There are two different methods of installing the version 0.23.5 onto your PANDA unit.
+
+One method requires no external tools but only supports some regions and devices due to missing CIA packs for the remaining regions and devices.
+
+The other method supports all regions and devices, but requires a CTR flash card and the necessary development hardware to write a CSU to that CTR flash card.
+
+___
+### Methods
+
+___
+
+#### 0.23.5 Install (CIAs)
+
+This method is compatible with the following devices 
+
++  SNAKE / CLOSER / JAN
+    + [EUR / JPN / USA]
++  CTR / SPR / FTR
+   + [EUR / USA]
+
+### Continue to [0.23.5 Install (CIAs)](0.23.5-install-(cias))
+{: .notice--primary}
+
+___
+
+#### 0.23.5 Install (CSU)
+
+This method is compatible with the following devices 
+
++  SNAKE / CLOSER / JAN
+   + [EUR / JPN / USA]
++  CTR / SPR / FTR
+   + [CHN / EUR / JPN / KOR / TWN / USA]
+
+### Continue to [0.23.5 Install (CSU)](0.23.5-install-(csu))
+{: .notice--primary}

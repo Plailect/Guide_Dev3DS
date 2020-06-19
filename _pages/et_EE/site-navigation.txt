@@ -1,0 +1,32 @@
+---
+title: "Site Navigation" #
+sitemap: false
+---
+
+{% capture notice-2 %}
+**All**
+
++ [0.23.5 Install](0.23.5-install)
++ [0.23.5 Install (CIAs)](0.23.5-install-(cias))
++ [0.23.5 Install (CSU)](0.23.5-install-(csu))
++ [A9LH to B9S](a9lh-to-b9s)
++ [Credits](credits)
++ [Donations](donations)
++ [F3 (Linux)](f3-(linux))
++ [F3X (Mac)](f3x-(mac))
++ [FAQ](faq)
++ [Flashing ntrboot (3DS Single System)](flashing-ntrboot-(3ds-single-system))
++ [Flashing ntrboot (3DS Multi System)](flashing-ntrboot-(3ds-multi-system))
++ [Flashing ntrboot (DSi)](flashing-ntrboot-(dsi))
++ [Flashing ntrboot (NDS)](flashing-ntrboot-(nds))
++ [Flashing ntrboot (Powersaves)](flashing-ntrboot-(powersaves))
++ [Get Started](get-started)
++ [H2testw (Windows)](h2testw-(windows))
++ [Home](/)
++ [Installing boot9strap (Browser)](installing-boot9strap-(browser))
++ [Installing boot9strap (ntrboot)](installing-boot9strap-(ntrboot))
++ [ntrboot](ntrboot)
++ [Troubleshooting](troubleshooting)
++ [Updating B9S](updating-b9s)
+{% endcapture %}
+<div class="notice--primary">{{ notice-2 | markdownify }}</div>

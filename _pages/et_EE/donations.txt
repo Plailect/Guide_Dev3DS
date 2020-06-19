@@ -1,0 +1,7 @@
+---
+title: "Donations"
+---
+
+[![Paypal]({{ "/images/paypal_white.png" | absolute_url }}){:height="72px" width="256px"}{: style="padding-bottom: .35em"}](https://www.paypal.me/NintendoHomebrew/15){: .align-center}
+{: .text-center}
+{: .notice--info}
